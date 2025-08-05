@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+
+th, td {
+  padding: 6px 10px;
+  text-align: left;
+}
+img {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+

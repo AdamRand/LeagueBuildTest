@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>League Armor Calculator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Effective Armor Calculator</h1>
+  <form id="armorForm">
+    <label>Base Armor: <input type="number" step="any" name="base_armor" value="110"></label>
+    <label>Bonus Armor: <input type="number" step="any" name="bonus_armor" value="100"></label>
+    <label>Flat Reduction: <input type="number" step="any" name="flat_reduction" value="20"></label>
+    <label>Flat Penetration: <input type="number" step="any" name="flat_pen" value="18"></label>
+    <label>Percent Reduction: <input type="number" step="any" name="percent_reduction" value="0.3"></label>
+    <label>Percent Penetration: <input type="number" step="any" name="percent_pen" value="0.4"></label>
+    <button type="submit">Calculate</button>
+  </form>
+
+  <h2>Total Stats:</h2>
+  <ul id="statList"></ul>
+
+  <h2>Effective Armor:</h2>
+  <p id="armorResult"></p>
+
+  <h2>Final Build Table:</h2>
+  <table id="buildTable" border="1" cellpadding="5" cellspacing="0"></table>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <h2>Flow Chart/Algorithm:</h2>
+  <img src="{{ url_for('static', filename='algorithm.png') }}" alt="algorithm_flow_chart" width="1920">
+
+</body>
+</html>
